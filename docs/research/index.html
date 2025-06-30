@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.42">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-e195abd9978a8c1399afbc9be9c575f2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script src="../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
@@ -239,7 +239,7 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -265,7 +265,7 @@ window.Quarto = {
 <div class="research project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-listing-date-sort="1704092400000" data-listing-file-modified-sort="1751245748949" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="407">
+        <li class="project" data-index="0" data-listing-date-sort="1704092400000" data-listing-file-modified-sort="1751255959573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="407">
             <div class="project-content listing-pub-info">
                 <p><a href="https://emineari.com/"><strong>Emine Arı</strong></a>, <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&amp;id=rbayer">Reşat Bayer</a>, <a href="https://www.sabanciuniv.edu/rehber/KisiselBilgilerCV.php?sicil=1664&amp;dil=Eng">Özge Kemahlıoğlu</a> and <a href="https://ecekural.com/">Ece Kural</a>, “Avoiding fallout from terrorist attacks: The role of local politics and governments,” <em>Journal of Peace Research</em> (2024): 263–278, DOI: <a href="https://doi.org/10.1177/00223433221126715"><code>10.1177/00223433221126715</code></a></p>
             </div>
@@ -313,7 +313,7 @@ window.Quarto = {
             </div>
         </li>
         
-        <li class="project" data-index="1" data-listing-date-sort="1704092400000" data-listing-file-modified-sort="1751250849801" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="501">
+        <li class="project" data-index="1" data-listing-date-sort="1704092400000" data-listing-file-modified-sort="1751255959621" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="501">
             <div class="project-content listing-pub-info">
                 <p><a href="https://emineari.com/"><strong>Emine Arı</strong></a>, <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&amp;id=rbayer">Reşat Bayer</a>, and <a href="https://www.sabanciuniv.edu/rehber/KisiselBilgilerCV.php?sicil=1664&amp;dil=Eng">Özge Kemahlıoğlu</a>, “Breaking the bank: Effects of domestic conflict on the banking sector in Turkey,” <em>Terrorism and Political Violence</em> (2024): 1083-1104, DOI: <a href="https://doi.org/10.1080/09546553.2023.2252104"><code>10.1080/09546553.2023.2252104</code></a></p>
             </div>
@@ -374,7 +374,7 @@ No matching items
 <div class="research project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-listing-file-modified-sort="1751246688003" data-listing-reading-time-sort="1" data-listing-word-count-sort="192">
+        <li class="project" data-index="0" data-listing-file-modified-sort="1751255959653" data-listing-reading-time-sort="1" data-listing-word-count-sort="192">
             <div class="project-content listing-pub-info">
                 <p><a href="https://emineari.com/"><strong>Emine Arı</strong></a> and <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&amp;id=rbayer">Reşat Bayer</a>. “Militant regimes: International conflict during state of emergencies."</p>
             </div>
@@ -490,6 +490,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
   clipboard.on('success', onCopySuccess);
   if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
     const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
       text: getTextToCopy,
       container: window.document.getElementById('quarto-embedded-source-code-modal')
@@ -600,6 +602,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (window.Quarto?.typesetMath) {
         window.Quarto.typesetMath(note);
       }
+      // TODO in 1.5, we should make sure this works without a callout special case
       if (note.classList.contains("callout")) {
         return note.outerHTML;
       } else {
