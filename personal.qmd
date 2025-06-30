@@ -1,0 +1,16 @@
+---
+title: ""
+image: files/Ari_Erol_ID.png
+about: 
+  template: jolla
+  image-shape: round
+  image-width: 14rem
+  
+  id: ppc2
+  
+---
+::: {#ppc2}
+I am happily married to <a href="https://fatiherolphd.com" target="_blank"> Fatih Erol</a>. Emine is a Research Social Scientist and Lab Manager at <a href="https://policylab.arizona.edu" target="_blank"> the Arizona Policy Lab in the School of Government and Public Policy at the University of Arizona</a>. Fatih's primary research agenda covers comparative political behavior, political psychology, causal inference, and measurement. 
+
+If I happen to have sparse time, I enjoy water coloring and knitting.
+:::

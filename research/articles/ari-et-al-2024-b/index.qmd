@@ -1,0 +1,130 @@
+---
+title: "Breaking the bank: Effects of domestic conflict on the banking sector in Turkey"
+date: "2024-01-01"
+author:
+  - name: Emine Arı
+    url: https://emineari.com/
+    orcid: 0000-0002-6408-0260
+    affiliation: University of Arizona
+  - name: Reşat Bayer
+    url: https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&id=rbayer
+    orcid: 0000-0002-6566-1622/
+    affiliation: Koç University
+  - name: Özge Kemahlıoğlu
+    url: https://www.sabanciuniv.edu/rehber/KisiselBilgilerCV.php?sicil=1664&dil=Eng
+    orcid: 0000-0001-7070-0844/
+    affiliation: Sabancı University
+pub-info:
+  reference: >-
+    <a href="https://emineari.com/"><strong>Emine Arı</strong></a>, <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&id=rbayer">Reşat Bayer</a>, and <a href="https://www.sabanciuniv.edu/rehber/KisiselBilgilerCV.php?sicil=1664&dil=Eng">Özge Kemahlıoğlu</a>, “Breaking the bank: Effects of domestic conflict on the banking sector in Turkey,” <em>Terrorism and Political Violence</em> (2024): 1083-1104, DOI: <a href="https://doi.org/10.1080/09546553.2023.2252104"><code>10.1080/09546553.2023.2252104</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1080/09546553.2023.2252104
+      icon: fa-solid fa-scroll
+    - name: Replication Files
+      url: https://github.com/eari15/Replication-Ari-Bayer-Kemahlioglu-2024b
+      icon: fa-solid fa-table
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1080/09546553.2023.2252104
+      icon: ai ai-zotero
+doi: 10.1080/09546553.2023.2252104
+---
+
+## Abstract
+
+Even though violent attacks resulting in civilian fatalities can be seen as constituting failure on the part of the incumbent party to provide security to citizens, governments are not always punished electorally. Rather, at times, they appear to gain votes following terrorist attacks. Here we argue that political parties that can take advantage of their local presence to frame and communicate their narrative in response to terrorism, can better manage to avoid blame and even to emerge victorious in times of violent conflict. The AKP in Turkey is one such important example. Our statistical analyses of municipality-level aggregate election results show that the party not only maintained national incumbency, but even strengthened its predominance in the political system in the face of growing security threats. In municipalities where AKP controlled the local government and hence municipal resources, the party did not lose votes following terrorist attacks. This finding remains even when we consider past voting, regional variations, competitive districts, and ethnicity. Our argument that incumbents can avoid punishment through their capacity to reach out to voters at the local level is also supported by individual-level survey data and the comparison with neighboring municipalities. As such, we highlight how local government control can be consequential for national politics, including periods when security dominates the national agenda.
+
+## Important figures
+
+::: {style="display: flex; align-items: flex-start; gap: 20px; margin: 20px 0;"}
+::: {style="flex: 3;"}
+![](figure-1.jpg)
+:::
+  
+::: {style="flex: 1; font-size: 0.9em; line-height: 1.4; padding-left: 15px;"}
+**Figure 1.**  Number of banks (by ownership) and bank branches.
+:::
+:::
+
+::: {style="display: flex; align-items: flex-start; gap: 20px; margin: 20px 0;"}
+::: {style="flex: 3;"}
+![](figure-2.jpg)
+:::
+
+::: {style="flex: 1; font-size: 0.9em; line-height: 1.4; padding-left: 15px;"}
+**Figure 2.** Bank branches and terror across Turkey.
+:::
+:::
+
+::: {style="display: flex; align-items: flex-start; gap: 20px; margin: 20px 0;"}
+::: {style="flex: 3;"}
+![](figure-3.jpg)
+:::
+
+::: {style="flex: 1; font-size: 0.9em; line-height: 1.4; padding-left: 15px;"}
+**Figure 3:** Coefficient plots for non-state bank branches and deposits. 
+:::
+:::
+
+
+::: {style="display: flex; align-items: flex-start; gap: 20px; margin: 20px 0;"}
+::: {style="flex: 3;"}
+![](figure-4.jpg)
+:::
+
+::: {style="flex: 1; font-size: 0.9em; line-height: 1.4; padding-left: 15px;"}
+**Figure 4:** Coefficient plots for state bank branches and deposits.
+:::
+:::
+
+
+::: {style="display: flex; align-items: flex-start; gap: 20px; margin: 20px 0;"}
+::: {style="flex: 3;"}
+![](figure-5.jpg)
+:::
+
+::: {style="flex: 1; font-size: 0.9em; line-height: 1.4; padding-left: 15px;"}
+**Figure 5:** Predicted values of bank branches estimated from Online Appendix Table 7 and Online Appendix Table 8.
+:::
+:::
+
+
+::: {style="display: flex; align-items: flex-start; gap: 20px; margin: 20px 0;"}
+::: {style="flex: 3;"}
+![](figure-6.jpg)
+:::
+
+::: {style="flex: 1; font-size: 0.9em; line-height: 1.4; padding-left: 15px;"}
+**Figure 6:** Predicted values of deposits estimated from Online Appendix Table 7 and Online Appendix Table 8.
+:::
+:::
+
+
+::: {style="display: flex; align-items: flex-start; gap: 20px; margin: 20px 0;"}
+::: {style="flex: 3;"}
+![](figure-7.jpg)
+:::
+
+::: {style="flex: 1; font-size: 0.9em; line-height: 1.4; padding-left: 15px;"}
+**Figure 7:** Coefficient plots for credits.
+:::
+:::
+
+
+## Citation
+
+<p class="buttons" style="text-align:center;">
+
+<a class="btn btn-danger" target="_blank" href="https://www.zotero.org/save?type=doi&q=10.1080/09546553.2023.2252104">{{< ai zotero >}} Add to Zotero {{< fa square-arrow-up-right >}}</a>
+
+</p>
+
+``` bibtex
+@article{ari_et_al_2024,
+    Author = {Emine Arı and Reşat Bayer and Özge Kemahlıoğlu},
+    Doi = {10.1080/09546553.2023.2252104},
+    Journal = {Terrorism and Political Violence},
+    Pages = {1083--1104},
+    Title = {Breaking the bank: Effects of domestic conflict on the banking sector in Turkey},
+    Year = {2024}}
+```

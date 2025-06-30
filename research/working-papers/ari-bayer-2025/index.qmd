@@ -1,0 +1,27 @@
+---
+title: "Militant regimes: International conflict during state of emergencies"
+author:
+  - name: Emine Arı
+    url: https://emineari.com/
+    orcid: 0000-0002-6408-0260
+    affiliation: University of Arizona
+  - name: Reşat Bayer
+    url: https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&id=rbayer
+    orcid: 0000-0002-6566-1622
+    affiliation: Koç University
+pub-info:
+  reference: >-
+    <a href="https://emineari.com/"><strong>Emine Arı</strong></a> and <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&id=rbayer">Reşat Bayer</a>. “Militant regimes: International conflict during state of emergencies."</a>
+pub-status: 
+  status: Writing
+  class: warning
+  icon: fa-solid fa-pencil
+---
+
+## Abstract
+
+The relationship between different regime types and international conflict has been studied extensively, yet the role of emergency powers, which profoundly relate to both, remains understudied. While conventionally viewed as democratic institutional responses to crises, states of emergency are also frequently utilized by non-democratic regimes, underscoring these powers’ significance in interstate conflict processes across diverse political systems. Yet, there is scant focus on domestic, national emergencies in non-democratic regime types. The implicit assumption that the leadership of a given regime always faces the same internal constraints contributes to puzzling findings. We attempt to reconcile past findings by analyzing how such emergencies might influence international conflict and peace. Building on the long-standing discussion of audience costs, we argue that emergencies predispose conflict initiation risks in non-democratic regimes with accountability mechanisms. Our case studies and statistical analysis of all countries from the world (1980-2007) with multiple datasets demonstrate that party-led civilian non-democratic regimes tend to demonstrate higher rates of international conflicts compared to other non-democracies, when facing domestic emergencies. Our study suggests that internal emergencies considerably relate to foreign policy behavior and would end up harming international cooperation.
+
+## Current Status
+
+Under Review (Revise & Resubmit)

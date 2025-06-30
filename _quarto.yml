@@ -1,0 +1,68 @@
+project:
+  type: website
+  output-dir: docs
+
+render:
+    - "*.qmd"
+
+resources:
+    - "files/**"
+    
+website:
+  title: "Emine Arı"
+  site-url: "https://eari15.github.io/ea_site/"
+  site-path: "/ea_site/"
+  repo-url: "https://github.com/eari15/ea_site"
+  
+  navbar:
+    pinned: true 
+    
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Research"
+        href: research/index.qmd
+      - text: "CV"
+        href: "cv/index.qmd"
+        target: _blank
+      - text: "Teaching"
+        href: "teaching/index.qmd"
+      - text: "Personal"
+        href: personal.qmd
+    
+    right: 
+      - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
+        href: mailto:earierol@arizona.edu
+      - text: "{{< iconify mdi twitter size=1.2em title='X (Twitter)' >}}"
+        href: https://twitter.com/emineari_IR
+        target: _blank
+      - text: "{{< iconify ph butterfly-bold size=1.2em title='Bluesky' >}}"
+        href: https://bsky.app/profile/emineari.bsky.social
+        rel: me
+        target: _blank
+      - text: "{{< ai orcid >}}"
+        href: https://orcid.org/0000-0002-6408-0260
+        target: _blank
+      - text: "{{< ai google-scholar >}}"
+        href: https://scholar.google.com/citations?user=9OZzNcoAAAAJ&hl=en&oi=ao
+        target: _blank
+      - text: "{{< iconify simple-icons researchgate size=1.2em title='ResearchGate' >}}"
+        href: https://www.researchgate.net/profile/Emine-Ari
+        target: _blank
+  
+  page-footer:
+    left: |
+      <span>{{< fa brands orcid >}} <strong>ORCID</strong> <a href="https://orcid.org/0000-0002-6408-0260" target=_blank>0000-0002-6408-0260</a> </span>
+    center: |
+      Copyright 2025 Emine Arı\
+      All rights reserved.
+    right: |
+      <span>Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)</span>
+  
+format:
+  html:
+    theme: 
+     - html/ea_site.scss
+
+
+

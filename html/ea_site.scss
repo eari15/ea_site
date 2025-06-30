@@ -1,0 +1,831 @@
+/*-- scss:defaults --*/
+
+$theme: "ath" !default;
+
+//
+// Color system - Yellow & Black Harmony
+//
+
+$white:    #ffffff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #373a3c !default;
+$gray-900: #212529 !default;
+$black:    #000000 !default;
+
+// Updated color palette for yellow/black theme
+$blue:    #2780e3 !default;
+$indigo:  #6610f2 !default;
+$purple:  #000000 !default;        // Changed to black
+$pink:    #FFD700 !default;        // Changed to gold
+$red:     #B8860B !default;        // Changed to dark goldenrod
+$orange:  #FFD700 !default;        // Changed to gold
+$light-orange:  #FFF8DC !default;  // Changed to cream
+$yellow:  #FFD700 !default;        // Gold
+$green:   #B8860B !default;        // Changed to dark goldenrod
+$teal:    #20c997 !default;
+$cyan:    #3093CF !default;
+
+$primary:   $yellow !default;       // Changed to yellow/gold
+$secondary: $black !default;        // Changed to black
+$success:   $yellow !default;       // Changed to yellow
+$info:      $cyan !default;
+$warning:   $orange !default;
+$danger:    $black !default;        // Changed to black
+$light:     $gray-400 !default;
+$dark:      $black !default;
+
+// Fonts
+$font-family-sans-serif: "Libre Franklin" !default;
+
+$headings-font-family: "Jost" !default;
+$headings-font-weight: 600 !default;
+
+$navbar-font-family: "Jost" !default;
+$toc-font-family: "Jost" !default;
+$footer-font-family: "Jost" !default;
+
+// Body
+$body-color: $black !default;       // Changed to black
+
+// Links - Updated for yellow/black theme
+$link-color: $red !default;      // Changed to yellow/gold
+$link-decoration: none !default;
+$link-hover-color: $black !default; // Changed to black
+$link-hover-decoration: underline !default;
+
+// Inline code
+$code-bg: $light-orange !default;   // Changed to cream
+$code-color: $black !default;       // Changed to black
+
+// Code copy
+$btn-code-copy-color-active: $yellow !default; // Changed to yellow
+
+// TOC
+$toc-color: $yellow;                // Changed to yellow
+$toc-font-size: 1em;
+
+// Navbar - Updated for yellow/black theme
+$navbar-bg: $black !default;        // Changed to black
+$navbar-fg: $yellow !default;       // Changed to yellow
+$navbar-hl: $light-orange !default;
+
+// Footer - Updated for yellow/black theme
+$footer-bg: $black !default;        // Black background
+$footer-fg: $yellow !default;       // Yellow text
+
+/*-- scss:rules --*/
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" !default;
+
+@if $web-font-path {
+    @import url($web-font-path);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.home {
+    .quarto-title-banner {
+        margin-bottom: 0;
+    }
+}
+
+#title-block-header {
+    &.home {
+        margin-block-end: 0.5rem;
+    }
+}
+
+.home {
+    .quarto-title-banner {
+        margin-bottom: 0;
+    }
+
+    #title-block-header {
+        margin-block-end: 0;
+    }
+}
+
+// Shrink blocks of code
+pre.text, pre.sourceCode, .cell-output pre {
+    font-size: 0.775em;
+}
+
+.navbar {
+    font-family: $navbar-font-family;
+}
+
+// Put all the icons in a single row in the hamburger menu
+.navbar-nav.navbar-nav-scroll.ms-auto {
+    flex-direction: row;
+}
+
+#TOC {
+    font-family: $toc-font-family;
+    padding-bottom: 0.1em;
+    font-weight: 300;
+
+    .active {
+        font-weight: 400;
+    }
+
+    #toc-title {
+        font-weight: 600;
+    }
+}
+
+.sidebar nav[role="doc-toc"]>ul li a {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+// Blog categories
+#quarto-margin-sidebar {
+    .quarto-listing-category-title {
+        margin-left: 0.5em;
+    }
+
+    .quarto-listing-category {
+        font-family: $toc-font-family;
+        font-weight: 300;
+        font-size: 1em;
+        line-height: 1.1;
+        padding-left: 0.6rem;
+        margin-left: 0.5em;
+        border-left: 1px solid $gray-200;
+
+        .category {
+            padding-bottom: 0.5rem;
+        }
+
+        .active {
+            font-weight: 400;
+            color: $yellow;  // Changed to yellow
+        }
+
+        .quarto-category-count {
+            font-weight: 200;
+            font-size: 0.8em;
+            color: $gray-600;
+        }
+    }
+}
+
+.nav-footer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 0 !important;
+    min-height: 3em;
+    font-family: $footer-font-family;
+
+    a {
+        color: $light-orange;
+    }
+
+    .faux-block {
+        display: block;
+        padding-bottom: 0.4em;
+    }
+
+    .fingerprint {
+        font-family: $font-family-monospace;
+        font-size: 0.8em;
+    }
+
+    .nav-footer-center {
+        text-align: center;
+        position: inherit;
+        margin-top: 0;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            margin-top: 0.5em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center {
+        text-align: center;
+        width: 100%;
+        min-height: 2em;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        .nav-footer-left {
+            text-align: left;
+        }
+
+        .nav-footer-right {
+            text-align: right;
+        }
+
+        .nav-footer-left,
+        .nav-footer-right,
+        .nav-footer-center {
+            flex: 1 1 33%;
+        }
+    }
+}
+
+// Title banner styling - Changed to black background (only the banner area)
+.quarto-title-banner {
+    background-color: $black !important;
+    background: $black !important;
+    color: $yellow !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-bottom: 0 !important;
+    
+    h1, h2, h3, h4, h5, h6 {
+        color: $yellow !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .quarto-title-meta {
+        color: $yellow !important;
+        margin-top: 0.5rem !important;
+    }
+}
+
+#title-block-header {
+    margin-bottom: 1rem !important;
+    
+    .quarto-title-banner {
+        font-family: $headings-font-family;
+        background-color: $black !important;
+        background: $black !important;
+        
+        .description {
+            font-size: 1.1em;
+            margin-top: 0.5em !important;
+            margin-bottom: 0 !important;
+            color: $yellow !important;
+        }
+    }
+}
+
+// Blog
+.blog {
+    .blog-entry {
+        display: flex;
+        flex-direction: row;
+        font-family: $headings-font-family;
+        line-height: 1.3;
+        margin-bottom: 1.5em;
+        column-gap: 1em;
+
+        .metadata {
+            flex: 0 0 8%;
+        }
+
+        .body {
+            flex: 1 1 auto;
+        }
+
+        .thumbnail {
+            flex: 0 0 25%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                max-height: 120px;
+            }
+        }
+
+        .title {
+            font-weight: 500;
+            font-size: 1.3em;
+            margin-bottom: 0.2em;
+            line-height: 1.2;
+        }
+
+        .description {
+            font-weight: 300;
+            font-size: 1em;
+            margin-bottom: 0.3em;
+        }
+
+        .date {
+            font-weight: 300;
+            font-size: 0.85em;
+            margin-top: 0.3em;
+            text-align: right;
+        }
+
+        .post-categories {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 0.4em;
+            column-gap: 0.4em;
+            margin: 0.5em 0;
+
+            .post-category {
+                color: $gray-600;
+                border: 1px solid $gray-500;
+                border-radius: 0.25rem;
+                text-transform: uppercase;
+                font-size: 0.65em;
+                padding: 0.15em 0.5em;
+                cursor: pointer;
+            }
+        }
+               
+        .post-doi {
+            font-weight: 300;
+            font-size: 0.85em;
+            margin: 0.5em 0;
+            text-align: right;
+            
+            .doi-icon {
+                width: 1.1em;
+                padding-bottom: 1px;
+            }
+            
+            a {
+                color: $gray-600;
+            }
+        }
+    }
+}
+
+.blog-post {
+    .quarto-title .quarto-categories {
+        margin-top: 1.5em;
+
+        .quarto-category {
+            background-color: $yellow;  // Changed to yellow
+            border-color: $black;       // Changed to black
+            color: $black;              // Changed to black text
+            font-size: 0.65em;
+            opacity: 1;
+        }
+    }
+    
+    .quarto-title-author-orcid img {
+        margin-bottom: -3px;
+    }
+    
+    .quarto-title-meta-contents .doi::before {
+        content: "";
+        background-image: url(/files/doi.svg);
+        background-size: 1.1em;
+        display: inline-block;
+        width: 1.1em;
+        height: 1.1em;
+        margin-bottom: -3px;
+    }
+}
+
+// Research
+.quarto-title-block {
+    .haiku {
+        text-align: right;
+        font-family: $headings-font-family;
+        margin: 1.3em 0;
+        font-size: 1.6em;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    .quarto-title .quarto-categories {
+        padding-bottom: 0;
+        flex-wrap: wrap;
+        row-gap: 0.4em;
+    }
+
+    .project-details {
+        background-color: rgba($yellow, 0.1);  // Changed to yellow
+        padding: 0.75em;
+        margin: 1em 0;
+    }
+
+    .quarto-title-meta-heading.manual {
+        margin-top: 2em !important;
+    }
+
+    .project-links {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .project-link {
+        display: inline-block;
+        white-space: nowrap;
+        padding: 0 1em 0 0;
+        font-weight: bold;
+    }
+}
+
+.back-nav {
+    margin-bottom: 1.5em;
+}
+
+.research {
+    .back-nav a {
+        color: $yellow;  // Changed to yellow
+    }
+    
+    .quarto-title .quarto-categories .quarto-category {
+        background-color: $light-orange;  // Changed to cream 
+        color: $red;                      // Changed to dark goldenrod
+        font-size: 0.65em;
+        opacity: 1;
+    }
+
+    .project-categories {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.35em 0 0.35em;
+        padding-top: 0.35em;
+        padding-left: 0.5em;
+        padding-bottom: 0;
+        row-gap: 0.4em;
+        column-gap: 0.4em;
+        font-family: $headings-font-family;
+
+        .project-category {
+            padding: 0.25em 0.75em 0.25em 0em;
+            font-size: 0.7em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.project-list {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 2em;
+
+        li.project {
+            margin-bottom: 2.5em;
+            border-left: 6px solid $yellow;  // Changed to yellow
+
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    .project-content {
+        padding-left: 0.5em;
+
+        .status {
+            font-size: 1rem;
+            font-weight: 250;
+            padding: 0.2em;
+            margin-right: 0.5em;
+        }
+    }
+
+    .haiku {
+        margin: 0.4rem 0 0rem;
+        font-family: $headings-font-family;
+        font-weight: 300;
+        font-style: italic;
+        text-align: right;
+        color: $gray-600;
+        font-size: 1.1em;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            font-size: 0.95rem;
+        }
+    }
+
+    ul.project-links {
+        margin-bottom: 0;
+    }
+
+    .project-details-listing {
+        margin-top: 0.8em;
+        background-color: $light-orange;  // Changed to cream
+        font-size: 0.9rem;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            font-size: 0.95rem;
+        }
+
+        .project-link {
+            display: inline-block;
+            white-space: nowrap;
+            padding: 0.5em 0.5em 0.5em 1em;
+        }
+
+        .details {
+            background-color: $yellow;  // Changed to yellow
+            padding-right: 1.5em;
+
+            a {
+                color: $black;          // Changed to black text
+            }
+        }
+    }
+}
+
+// Research Articles Layout - Clean inline layout with yellow/black theme
+.article-item {
+    background: white;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    border-left: none;          // Remove the yellow left border
+}
+
+.article-header {
+    margin-bottom: 0;
+}
+
+.article-title {
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    color: $black;
+}
+
+.article-title .author-name {
+    font-weight: normal;
+    color: $yellow;             // Keep yellow author names
+}
+
+.article-title .journal-name {
+    font-style: italic;
+    color: $black;
+    font-weight: normal;
+}
+
+.article-title .doi-link {
+    color: $yellow;             // Keep yellow DOI
+    text-decoration: none;
+}
+
+.article-title .doi-link:hover {
+    text-decoration: underline;
+}
+
+.article-tags {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    color: $gray-700;
+}
+
+.article-tag {
+    background: transparent;
+    color: $gray-700;           // Keep gray tags
+    padding: 0;
+    border: none;
+    font-size: inherit;
+    font-weight: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-right: 8px;
+}
+
+.article-summary {
+    font-style: italic;
+    color: $gray-700;
+    text-align: left;
+    margin: 8px 0;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.article-links {
+    display: inline;            // Back to inline, not flex
+    gap: 0;
+}
+
+.article-link {
+    display: inline;            // Simple inline elements
+    align-items: center;
+    padding: 6px 8px 6px 0;     // Minimal padding like original
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    gap: 4px;
+    border: none;
+    margin-right: 6px;
+    background: transparent;
+}
+
+.article-link.primary {
+    background: $yellow;        // Yellow primary button
+    color: $black;              // Black text
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.article-link.primary:hover {
+    background: $black;         // Black on hover
+    color: $yellow;             // Yellow text on hover
+}
+
+.article-link.secondary {
+    background: transparent;
+    color: $yellow;             // Yellow text (visible on white background)
+    border: none;
+    padding: 6px 8px 6px 0;
+}
+
+.article-link.secondary:hover {
+    background: rgba($yellow, 0.1);
+    color: $yellow;
+}
+
+.article-link.zotero {
+    background: transparent;
+    color: $yellow;             // Yellow text (visible on white background)
+    font-size: 0.9em;
+    padding: 6px 0;
+    margin-top: 0;
+    width: auto;
+    justify-content: flex-start;
+}
+
+.article-link.zotero:hover {
+    background: rgba($yellow, 0.1);
+    color: $yellow;
+}
+
+// Icons styling
+.article-link i {
+    font-size: 0.9em;
+    color: inherit;
+    margin-right: 4px;
+}
+
+// Mobile responsiveness
+@media (max-width: 768px) {
+    .article-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .article-link {
+        border-radius: 4px;
+        margin-bottom: 5px;
+        justify-content: center;
+    }
+}
+
+.teaching {
+    .course-entry {
+        display: flex;
+        flex-direction: row;
+        font-family: $headings-font-family;
+        line-height: 1.3;
+        margin-bottom: 3em;
+        column-gap: 0.7em;
+
+        .body {
+            flex: 1 1 auto;
+        }
+
+        .logo {
+            flex: 0 0 140px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .course-title {
+            font-weight: 500;
+            font-size: 1.25em;
+            margin-bottom: 0.2em;
+        }
+        
+        .course-details {
+            font-weight: 300;
+            font-size: 0.9em;
+            margin-bottom: 0.5em;
+            color: $gray-800;
+        }
+
+        .course-description {
+            font-weight: 300;
+            font-size: 1.1em;
+            margin-bottom: 0.5em;
+        }
+
+        .course-role {
+            font-weight: 500;
+        }
+
+        ul.course-semesters {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0;
+
+            li {
+                display: inline-block;
+                white-space: nowrap;
+                background-color: $yellow;  // Changed to yellow
+                margin: 0 0.2em 0.4em 0;
+                padding: 0.2em 0.4em;
+                font-size: 0.85em;
+                border-radius: 0.25rem;
+
+                &.no-link {
+                    background-color: $white;
+                    border: 1px solid $black;
+                }
+
+                a {
+                    color: $black;          // Changed to black text
+                }
+            }
+        }
+    }
+}
+
+.talks {
+    .talk-entry {
+        display: flex;
+        flex-direction: row;
+        font-family: $headings-font-family;
+        line-height: 1.3;
+        margin-bottom: 1.5em;
+        column-gap: 1em;
+
+        .body {
+            flex: 1 0 80%;
+        }
+
+        .metadata {
+            flex: 1 0 20%;
+        }
+
+        .title {
+            font-weight: 500;
+            font-size: 1.2em;
+            margin-bottom: 0.2em;
+            line-height: 1.2;
+        }
+
+        .description {
+            font-weight: 300;
+            font-size: 1em;
+            margin-bottom: 0.3em;
+        }
+
+        .date {
+            font-weight: 300;
+            font-size: 0.85em;
+            margin-top: 0.3em;
+            text-align: right;
+        }
+
+        ul.talk-links {
+            padding: 0 0.5em;
+            background-color: $light-orange;  // Changed to cream
+            margin-bottom: 0;
+
+            .talk-link {
+                display: inline-block;
+                white-space: nowrap;
+                margin: 0;
+                padding: 0.5em 1em 0.5em 0;
+                font-size: 0.85em;
+            }
+        }
+    }
+}
+
+.cv-download {
+    font-family: $headings-font-family;
+    background-color: $yellow;  // Changed to yellow
+    border-color: $yellow;      // Changed to yellow
+    color: $black;              // Changed to black text
+
+    &:hover {
+        background-color: $black; // Changed to black
+        border-color: $black;     // Changed to black
+        color: $yellow;           // Changed to yellow text
+    }
+}
+
+.code-tools-button {
+    position: relative;
+    left: 5em;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+        left: 0;
+    }
+}

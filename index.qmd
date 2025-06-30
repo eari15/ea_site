@@ -1,0 +1,20 @@
+---
+image: files/Ari_ID.png
+about: 
+  template: solana
+  image-shape: round
+  image-width: 15rem
+  
+  id: ppc
+---
+
+::: {#ppc}
+
+
+I am a Research Associate and an Adjunct Instructor in <a href="https://policylab.arizona.edu" target="_blank">the School of Government and Public Policy at the University of Arizona</a>.
+
+My research agenda covers civil conflict, political violence, terrorism, state of emergency, and electoral behavior utilizing originally collected data at various levels (individual survey respondents, non-state armed groups, and countries) and quantified textual and visual data such as newspapers and satellite imagery.
+
+I teach courses on international relations, peace and conflict, terrorism and counter-terrorism, foreign policy analysis, and research methods.
+:::
+

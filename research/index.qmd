@@ -1,0 +1,28 @@
+---
+listing:
+  - id: articles
+    contents: "articles/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+  - id: working-papers
+    contents: "working-papers/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+page-layout: full
+include-back-link: true
+toc-location: right
+---
+
+My research agenda covers civil conflict, political violence, terrorism, state of emergency, and electoral behavior. 
+
+
+## Journal articles
+
+:::{#articles}
+:::
+
+
+## Working papers
+
+:::{#working-papers}
+:::
