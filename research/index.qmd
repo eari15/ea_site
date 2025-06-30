@@ -13,9 +13,6 @@ include-back-link: true
 toc-location: right
 ---
 
-My research agenda covers civil conflict, political violence, terrorism, state of emergency, and electoral behavior. 
-
-
 ## Journal articles
 
 :::{#articles}
