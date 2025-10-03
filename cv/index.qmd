@@ -1,7 +1,7 @@
 ---
 title: Curriculum vitæ
 description: "Emine Arı's CV"
-date: 2025-04-28
+date: 2025-10-02
 title-block-banner: "#771C6D"
 published-title: CV last updated
 engine: knitr
