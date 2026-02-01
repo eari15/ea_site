@@ -1,0 +1,52 @@
+---
+title: "Militant regimes: International conflict during state of emergencies"
+author:
+  - name: Emine Arı
+    url: https://emineari.com/
+    orcid: 0000-0002-6408-0260
+    affiliation: University of Idaho
+  - name: Reşat Bayer
+    url: https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&id=rbayer
+    orcid: 0000-0002-6566-1622
+    affiliation: Koç University
+pub-info:
+  reference: >-
+    <a href="https://emineari.com/"><strong>Emine Arı</strong></a> and <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&id=rbayer">Reşat Bayer</a>. “Militant regimes: International conflict during state of emergencies."</a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1177/14789299251410138
+      icon: fa-solid fa-scroll
+    - name: Author’s Accepted Manuscript version
+      url: https://www.dropbox.com/scl/fi/7rgtxgusqe1fq4zwrboc0/ari-bayer-2026.pdf?rlkey=il90f5bxumctq6lnhqcv9d810&st=4qokze4b&dl=0
+      icon: fa-solid fa-scroll
+    - name: Replication Files
+      url: https://doi.org/10.6084/m9.figshare.30747332
+      icon: fa-solid fa-table
+    - name: Add to Zotero
+      url: https://www.zotero.org/save?type=doi&q=10.1177/14789299251410138
+      icon: ai ai-zotero
+doi: 10.1177/14789299251410138
+---
+
+## Abstract
+
+While conventionally viewed as democratic institutional responses to crises, states of emergency are also frequently utilized by non-democratic regimes, underscoring these powers’ significance in processes of interstate conflict across diverse political systems. Yet, there is scant focus on domestic, national emergencies in non-democratic regime types. The implicit assumption that the leadership of a given regime always faces the same internal constraints contributes to puzzling findings. We attempt to reconcile past findings by analyzing how such emergencies might influence international conflict and peace. Building on the long-standing discussion of audience costs, we argue that emergencies predispose non-democratic regimes to the risk of conflict initiation, with accountability mechanisms. Our statistical analysis of all countries from the world (1980–2007) shows that party-led civilian non-democratic regimes have higher rates of international conflicts compared with other non-democracies, when facing domestic emergencies. Our study suggests that internal emergencies impact on foreign policy behavior and by implication end up harming international cooperation.
+
+
+## Citation
+
+<p class="buttons" style="text-align:center;">
+
+<a class="btn btn-danger" target="_blank" href="https://www.zotero.org/save?type=doi&q=10.1177/14789299251410138">{{< ai zotero >}} Add to Zotero {{< fa square-arrow-up-right >}}</a>
+
+</p>
+
+``` bibtex
+@article{ari_bayer_2026,
+    Author = {Emine Arı and Reşat Bayer},
+    Doi = {10.1177/14789299251410138},
+    Journal = {Political Studies Review},
+    Pages = {},
+    Title = {Militant regimes: International conflict during state of emergencies},
+    Year = {2026}}
+```

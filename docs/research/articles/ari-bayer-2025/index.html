@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -42,9 +76,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
-<script src="../../../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
 <link href="../../../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-contrib/iconify-2.0.0/iconify-icon.min.js"></script>
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -169,6 +203,20 @@ ul.task-list li input[type="checkbox"] {
         <div class="publication-content">
             <p><a href="https://emineari.com/"><strong>Emine Arı</strong></a> and <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&amp;id=rbayer">Reşat Bayer</a>. “Militant regimes: International conflict during state of emergencies.”</p>
         </div>
+                <ul class="project-links">
+                        <li class="project-link">
+                <a href="https://doi.org/10.1177/14789299251410138"><i class="fa-solid fa-scroll"></i> Final version</a>
+            </li>
+                        <li class="project-link">
+                <a href="https://www.dropbox.com/scl/fi/7rgtxgusqe1fq4zwrboc0/ari-bayer-2026.pdf?rlkey=il90f5bxumctq6lnhqcv9d810&amp;st=4qokze4b&amp;dl=0"><i class="fa-solid fa-scroll"></i> Author’s Accepted Manuscript version</a>
+            </li>
+                        <li class="project-link">
+                <a href="https://doi.org/10.6084/m9.figshare.30747332"><i class="fa-solid fa-table"></i> Replication Files</a>
+            </li>
+                        <li class="project-link">
+                <a href="https://www.zotero.org/save?type=doi&amp;q=10.1177/14789299251410138"><i class="ai ai-zotero"></i> Add to Zotero</a>
+            </li>
+                    </ul>
             </div>
 
     
@@ -181,7 +229,7 @@ ul.task-list li input[type="checkbox"] {
       </div>
       <div class="quarto-title-meta-contents">
             <p class="affiliation">
-                University of Arizona
+                University of Idaho
               </p>
           </div>
         <div class="quarto-title-meta-contents">
@@ -199,6 +247,14 @@ ul.task-list li input[type="checkbox"] {
           
       
         
+        <div>
+        <div class="quarto-title-meta-heading">Doi</div>
+        <div class="quarto-title-meta-contents">
+          <p class="doi">
+            <a href="https://doi.org/10.1177/14789299251410138">10.1177/14789299251410138</a>
+          </p>
+        </div>
+      </div>
       </div>
       
 
@@ -211,7 +267,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
-  <li><a href="#current-status" id="toc-current-status" class="nav-link" data-scroll-target="#current-status">Current Status</a></li>
+  <li><a href="#citation" id="toc-citation" class="nav-link" data-scroll-target="#citation">Citation</a></li>
   </ul>
 </nav>
 </nav>
@@ -227,11 +283,20 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="abstract" class="level2">
 <h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
-<p>The relationship between different regime types and international conflict has been studied extensively, yet the role of emergency powers, which profoundly relate to both, remains understudied. While conventionally viewed as democratic institutional responses to crises, states of emergency are also frequently utilized by non-democratic regimes, underscoring these powers’ significance in interstate conflict processes across diverse political systems. Yet, there is scant focus on domestic, national emergencies in non-democratic regime types. The implicit assumption that the leadership of a given regime always faces the same internal constraints contributes to puzzling findings. We attempt to reconcile past findings by analyzing how such emergencies might influence international conflict and peace. Building on the long-standing discussion of audience costs, we argue that emergencies predispose conflict initiation risks in non-democratic regimes with accountability mechanisms. Our case studies and statistical analysis of all countries from the world (1980-2007) with multiple datasets demonstrate that party-led civilian non-democratic regimes tend to demonstrate higher rates of international conflicts compared to other non-democracies, when facing domestic emergencies. Our study suggests that internal emergencies considerably relate to foreign policy behavior and would end up harming international cooperation.</p>
+<p>While conventionally viewed as democratic institutional responses to crises, states of emergency are also frequently utilized by non-democratic regimes, underscoring these powers’ significance in processes of interstate conflict across diverse political systems. Yet, there is scant focus on domestic, national emergencies in non-democratic regime types. The implicit assumption that the leadership of a given regime always faces the same internal constraints contributes to puzzling findings. We attempt to reconcile past findings by analyzing how such emergencies might influence international conflict and peace. Building on the long-standing discussion of audience costs, we argue that emergencies predispose non-democratic regimes to the risk of conflict initiation, with accountability mechanisms. Our statistical analysis of all countries from the world (1980–2007) shows that party-led civilian non-democratic regimes have higher rates of international conflicts compared with other non-democracies, when facing domestic emergencies. Our study suggests that internal emergencies impact on foreign policy behavior and by implication end up harming international cooperation.</p>
 </section>
-<section id="current-status" class="level2">
-<h2 class="anchored" data-anchor-id="current-status">Current Status</h2>
-<p>Under Review (Revise &amp; Resubmit)</p>
+<section id="citation" class="level2">
+<h2 class="anchored" data-anchor-id="citation">Citation</h2>
+<p class="buttons" style="text-align:center;">
+</p><p><a class="btn btn-danger" target="_blank" href="https://www.zotero.org/save?type=doi&amp;q=10.1177/14789299251410138"><i class="ai  ai-zotero" title="" style="color:"></i> Add to Zotero <i class="fa-solid fa-square-arrow-up-right" aria-label="square-arrow-up-right"></i></a></p>
+<p></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@article</span>{<span class="ot">ari_bayer_2026</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Author</span> = {Emine Arı and Reşat Bayer},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Doi</span> = {10.1177/14789299251410138},</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Journal</span> = {Political Studies Review},</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Pages</span> = {},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Title</span> = {Militant regimes: International conflict during state of emergencies},</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">Year</span> = {2026}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

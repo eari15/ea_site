@@ -82,41 +82,13 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-render','listing-resources','listing-website','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-date','listing-author','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-date-modified','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-render','listing-resources','listing-website','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-author','listing-pub-info','listing-doi','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-date','listing-date-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] }],
       
-      searchColumns: ["listing-project","listing-render","listing-resources","listing-website","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-date","listing-author","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-render","listing-resources","listing-website","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-author","listing-pub-info","listing-doi","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-date","listing-date-modified"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-working-papers .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-render','listing-resources','listing-website','listing-format','listing-language','listing-date-format','listing-title-block-banner','listing-toc','listing-toc-title','listing-toc-location','listing-execute','listing-include-back-link','listing-title','listing-author','listing-pub-info','listing-pub-status','listing-path','listing-outputHref','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-render","listing-resources","listing-website","listing-format","listing-language","listing-date-format","listing-title-block-banner","listing-toc","listing-toc-title","listing-toc-location","listing-execute","listing-include-back-link","listing-title","listing-author","listing-pub-info","listing-pub-status","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-working-papers'] = new List('listing-working-papers', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -248,7 +220,6 @@ window.Quarto = {
    
   <ul>
   <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link active" data-scroll-target="#journal-articles">Journal articles</a></li>
-  <li><a href="#working-papers" id="toc-working-papers" class="nav-link" data-scroll-target="#working-papers">Working papers</a></li>
   </ul>
 </nav>
     </div>
@@ -264,7 +235,63 @@ window.Quarto = {
 <div class="research project-list">
 <ul class="list">
     
-        <li class="project" data-index="0" data-listing-date-sort="1704092400000" data-listing-file-modified-sort="1751255959573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="407">
+        <li class="project" data-index="0" data-listing-file-modified-sort="1769575291827" data-listing-reading-time-sort="2" data-listing-word-count-sort="221">
+            <div class="project-content listing-pub-info">
+                <p><a href="https://emineari.com/"><strong>Emine Arı</strong></a> and <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&amp;id=rbayer">Reşat Bayer</a>. “Militant regimes: International conflict during state of emergencies."</p>
+            </div>
+
+            
+
+            
+            
+            
+            <div class="project-details-listing">
+                <ul class="project-links">
+                    <li class="project-link details">
+                        <a href="../research/articles/ari-bayer-2025/index.html" class="listing-name">
+                            <i class="fa-solid fa-circle-info"></i> Full details »
+                        </a>
+                    </li>
+                    
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://doi.org/10.1177/14789299251410138">
+                        
+                            <i class="fa-solid fa-scroll"></i> Final version
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://www.dropbox.com/scl/fi/7rgtxgusqe1fq4zwrboc0/ari-bayer-2026.pdf?rlkey=il90f5bxumctq6lnhqcv9d810&amp;st=4qokze4b&amp;dl=0">
+                        
+                            <i class="fa-solid fa-scroll"></i> Author’s Accepted Manuscript version
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://doi.org/10.6084/m9.figshare.30747332">
+                        
+                            <i class="fa-solid fa-table"></i> Replication Files
+                        </a>
+                    </li>
+                        
+                    <li class="project-link">
+                        
+                        <a href="https://www.zotero.org/save?type=doi&amp;q=10.1177/14789299251410138">
+                        
+                            <i class="ai ai-zotero"></i> Add to Zotero
+                        </a>
+                    </li>
+                        
+                    
+                </ul>
+            </div>
+        </li>
+        
+        <li class="project" data-index="1" data-listing-date-sort="1704096000000" data-listing-file-modified-sort="1751255959573" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="407">
             <div class="project-content listing-pub-info">
                 <p><a href="https://emineari.com/"><strong>Emine Arı</strong></a>, <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&amp;id=rbayer">Reşat Bayer</a>, <a href="https://www.sabanciuniv.edu/rehber/KisiselBilgilerCV.php?sicil=1664&amp;dil=Eng">Özge Kemahlıoğlu</a> and <a href="https://ecekural.com/">Ece Kural</a>, “Avoiding fallout from terrorist attacks: The role of local politics and governments,” <em>Journal of Peace Research</em> (2024): 263–278, DOI: <a href="https://doi.org/10.1177/00223433221126715"><code>10.1177/00223433221126715</code></a></p>
             </div>
@@ -312,7 +339,7 @@ window.Quarto = {
             </div>
         </li>
         
-        <li class="project" data-index="1" data-listing-date-sort="1704092400000" data-listing-file-modified-sort="1751302656504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="479">
+        <li class="project" data-index="2" data-listing-date-sort="1704096000000" data-listing-file-modified-sort="1751302656504" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="479">
             <div class="project-content listing-pub-info">
                 <p><a href="https://emineari.com/"><strong>Emine Arı</strong></a>, <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&amp;id=rbayer">Reşat Bayer</a>, and <a href="https://www.sabanciuniv.edu/rehber/KisiselBilgilerCV.php?sicil=1664&amp;dil=Eng">Özge Kemahlıoğlu</a>, “Breaking the bank: Effects of domestic conflict on the banking sector in Turkey,” <em>Terrorism and Political Violence</em> (2024): 1083-1104, DOI: <a href="https://doi.org/10.1080/09546553.2023.2252104"><code>10.1080/09546553.2023.2252104</code></a></p>
             </div>
@@ -355,41 +382,6 @@ window.Quarto = {
                         </a>
                     </li>
                         
-                    
-                </ul>
-            </div>
-        </li>
-        
-</ul>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-<section id="working-papers" class="level2">
-<h2 class="anchored" data-anchor-id="working-papers">Working papers</h2>
-<div id="listing-working-papers" class="quarto-listing quarto-listing-container-custom">
-<div class="research project-list">
-<ul class="list">
-    
-        <li class="project" data-index="0" data-listing-file-modified-sort="1751255959653" data-listing-reading-time-sort="1" data-listing-word-count-sort="192">
-            <div class="project-content listing-pub-info">
-                <p><a href="https://emineari.com/"><strong>Emine Arı</strong></a> and <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&amp;id=rbayer">Reşat Bayer</a>. “Militant regimes: International conflict during state of emergencies."</p>
-            </div>
-
-            
-
-            
-            
-            
-            <div class="project-details-listing">
-                <ul class="project-links">
-                    <li class="project-link details">
-                        <a href="../research/working-papers/ari-bayer-2025/index.html" class="listing-name">
-                            <i class="fa-solid fa-circle-info"></i> Full details »
-                        </a>
-                    </li>
                     
                 </ul>
             </div>

@@ -75,6 +75,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-ay_25-26 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-university','listing-number','listing-logo','listing-semester',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-university","listing-number","listing-logo","listing-semester"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-ay_25-26'] = new List('listing-ay_25-26', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-ay_24-25 .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -291,9 +319,10 @@ window.Quarto = {
     <h2 id="toc-title">Academic year</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2024–25</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2023–24</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2022–23</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2025–26</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2024–25</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2023–24</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2022–23</a></li>
   </ul>
 </nav>
     </div>
@@ -305,7 +334,76 @@ window.Quarto = {
 
 
 <section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2024–25</h2>
+<h2 class="anchored" data-anchor-id="section">2025–26</h2>
+<div id="listing-ay_25-26" class="quarto-listing quarto-listing-container-custom">
+<div class="teaching">
+    
+    <div class="course-entry">
+        <div class="logo">
+            
+            <img src="logos/pols1101.png" alt="Great Power Competition in the Middle East" title="Great Power Competition in the Middle East">
+            
+        </div>
+        <div class="body">
+            <p class="course-title">
+                
+                Great Power Competition in the Middle East 
+                
+            </p>
+            <p class="course-details">
+                <span class="course-number">IS 4030</span> | 
+                <span class="course-university"><a href="https://www.uidaho.edu/letters-arts-social-sciences/academics/politics-philosophy/">University of Idaho</a></span>
+                
+            </p>
+            <p class="course-description"></p>
+
+            <ul class="course-semesters">
+                
+                
+                <li><a href="https://www.dropbox.com/scl/fi/xdzjbq2lvn6m3lzmkjze5/Syllabus_IS_4030_Fall_2025.pdf?rlkey=o9ln0z9avl4wyknbx31l5mbls&amp;st=hxrwxwlz&amp;dl=0"><i class="fa-solid fa-building-columns"></i> Fall 2025</a></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    
+    <div class="course-entry">
+        <div class="logo">
+            
+            <img src="logos/empty.jpg" alt="American National Government" title="American National Government">
+            
+        </div>
+        <div class="body">
+            <p class="course-title">
+                
+                American National Government 
+                
+            </p>
+            <p class="course-details">
+                <span class="course-number">POLS 1101</span> | 
+                <span class="course-university"><a href="https://www.uidaho.edu/letters-arts-social-sciences/academics/politics-philosophy/">University of Idaho</a></span>
+                
+            </p>
+            <p class="course-description"></p>
+
+            <ul class="course-semesters">
+                
+                
+                <li><a href="https://www.dropbox.com/scl/fi/bhp6jj8vuitp7rar9azp5/Syllabus_POLS1101_01_Spring_2026.pdf?rlkey=pn5lhofsio97b0w7ptxu0dm73&amp;st=uapskd5n&amp;dl=0"><i class="fa-solid fa-building-columns"></i> Spring 2026</a></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+    
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2024–25</h2>
 <div id="listing-ay_24-25" class="quarto-listing quarto-listing-container-custom">
 <div class="teaching">
     
@@ -352,8 +450,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2023–24</h2>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">2023–24</h2>
 <div id="listing-ay_23-24" class="quarto-listing quarto-listing-container-custom">
 <div class="teaching">
     
@@ -392,8 +490,8 @@ No matching items
 </div>
 </div>
 </section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">2022–23</h2>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">2022–23</h2>
 <div id="listing-ay_22-23" class="quarto-listing quarto-listing-container-custom">
 <div class="teaching">
     

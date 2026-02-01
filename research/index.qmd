@@ -4,10 +4,6 @@ listing:
     contents: "articles/*/index.qmd"
     sort: "date desc"
     template: ../html/research/listing.ejs
-  - id: working-papers
-    contents: "working-papers/*/index.qmd"
-    sort: "date desc"
-    template: ../html/research/listing.ejs
 page-layout: full
 include-back-link: true
 toc-location: right
@@ -18,8 +14,3 @@ toc-location: right
 :::{#articles}
 :::
 
-
-## Working papers
-
-:::{#working-papers}
-:::
