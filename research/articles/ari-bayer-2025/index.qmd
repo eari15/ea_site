@@ -11,7 +11,7 @@ author:
     affiliation: Koç University
 pub-info:
   reference: >-
-    <a href="https://emineari.com/"><strong>Emine Arı</strong></a> and <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&id=rbayer">Reşat Bayer</a>. “Militant regimes: International conflict during state of emergencies."</a>
+    <a href="https://emineari.com/"><strong>Emine Arı</strong></a> and <a href="https://gsssh.ku.edu.tr/en/departments/political-science-and-international-relations/faculty/?detail=true&id=rbayer">Reşat Bayer</a>. “Militant regimes: International conflict during state of emergencies,” <em>Political Studies Review</em> (2026), DOI: <a href="https://doi.org/10.1177/14789299251410138"><code>10.1177/14789299251410138</code></a>
   links:
     - name: Final version
       url: https://doi.org/10.1177/14789299251410138
@@ -31,6 +31,31 @@ doi: 10.1177/14789299251410138
 ## Abstract
 
 While conventionally viewed as democratic institutional responses to crises, states of emergency are also frequently utilized by non-democratic regimes, underscoring these powers’ significance in processes of interstate conflict across diverse political systems. Yet, there is scant focus on domestic, national emergencies in non-democratic regime types. The implicit assumption that the leadership of a given regime always faces the same internal constraints contributes to puzzling findings. We attempt to reconcile past findings by analyzing how such emergencies might influence international conflict and peace. Building on the long-standing discussion of audience costs, we argue that emergencies predispose non-democratic regimes to the risk of conflict initiation, with accountability mechanisms. Our statistical analysis of all countries from the world (1980–2007) shows that party-led civilian non-democratic regimes have higher rates of international conflicts compared with other non-democracies, when facing domestic emergencies. Our study suggests that internal emergencies impact on foreign policy behavior and by implication end up harming international cooperation.
+
+## Important figures
+
+::: {style="display: flex; align-items: flex-start; gap: 20px; margin: 20px 0;"}
+::: {style="flex: 3;"}
+![](figure-1.jpg)
+:::
+
+::: {style="flex: 1; font-size: 0.9em; line-height: 1.4; padding-left: 15px;"}
+**Figure 1.** Emergency and The Dispute Initiation Across Regime Types.
+:::
+:::
+
+::: {style="display: flex; align-items: flex-start; gap: 20px; margin: 20px 0;"}
+::: {style="flex: 3;"}
+![](figure-2.jpg)
+:::
+
+::: {style="flex: 1; font-size: 0.9em; line-height: 1.4; padding-left: 15px;"}
+**Figure 2:** Declared and Undeclared Emergency and The Dispute Initiation.
+:::
+:::
+
+
+
 
 
 ## Citation
