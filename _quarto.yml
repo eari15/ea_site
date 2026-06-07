@@ -32,7 +32,7 @@ website:
     
     right: 
       - text: "{{< iconify bi envelope size=1.1em title='E-mail' >}}"
-        href: mailto:earierol@arizona.edu
+        href: mailto:eminearierol@gmail.com
       - text: "{{< iconify mdi twitter size=1.2em title='X (Twitter)' >}}"
         href: https://twitter.com/emineari_IR
         target: _blank
